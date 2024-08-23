@@ -40,11 +40,9 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.ui)
-    implementation(libs.androidx.ui.graphics)
-    implementation(libs.androidx.material3)
-    implementation(libs.androidx.foundation.android)
-    implementation(libs.androidx.material3.android)
+    implementation("androidx.compose.ui:ui:1.6.8")
+    implementation("androidx.compose.material3:material3:1.2.1")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.6.8")
     implementation(libs.androidx.junit.ktx)
     testImplementation("org.testng:testng:6.9.6")
     androidTestImplementation("org.testng:testng:6.9.6")
@@ -56,7 +54,7 @@ afterEvaluate {
             register<MavenPublication>("release") {
                 groupId = "com.github.maksroxx"
                 artifactId = "image-preview-compose"
-                version = "1.3"
+                version = "1.4"
 
                 afterEvaluate{
                     from(components["release"])
