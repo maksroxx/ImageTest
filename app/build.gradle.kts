@@ -51,7 +51,7 @@ android {
 
 dependencies {
     // implementation(project(":image-preview"))
-    implementation("com.github.maksroxx:ImageTest:1.0")
+    // implementation("com.github.maksroxx:ImageTest:1.0")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
