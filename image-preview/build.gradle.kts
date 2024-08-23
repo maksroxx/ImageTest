@@ -45,6 +45,9 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.foundation.android)
     implementation(libs.androidx.material3.android)
+    implementation(libs.androidx.junit.ktx)
+    testImplementation("org.testng:testng:6.9.6")
+    androidTestImplementation("org.testng:testng:6.9.6")
 }
 
 afterEvaluate {
