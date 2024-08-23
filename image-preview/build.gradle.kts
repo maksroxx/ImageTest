@@ -56,7 +56,7 @@ afterEvaluate {
             register<MavenPublication>("release") {
                 groupId = "com.github.maksroxx"
                 artifactId = "image-preview-compose"
-                version = "1.0"
+                version = "1.1"
 
                 afterEvaluate{
                     from(components["release"])
